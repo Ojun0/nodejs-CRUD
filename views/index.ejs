@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CRUD</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <% for(var i=0; i< 5; i++) { %>
+      <h1>HELLO</h1>
+    <% } %>
+    <h1>id : <%= id %></h1>
+    <h1>pw : <%= pw %></h1>
+    <h1>name : <%= name %></h1>
+    <form action="/" method="get"> <!-- 아이디 조회 -->
+      <input type="submit" name="t" value="test">
+    </form>
+    <form action="/create" method="post"> <!-- 아이디 추가 / 회원가입 -->
+      <input type="text" name="id">
+      <input type="text" name="pw">
+      <input type="text" name="name">
+      <input type="submit" name="t" value="test">
+    </form>
+    <form action="/update" method="post"> <!-- 정보 수정 -->
+      <input type="text" name="id">
+      <input type="text" name="pw">
+      <input type="text" name="name">
+      <input type="submit" name="t" value="test">
+    </form>
+    <form action="/delete" method="post"> <!-- 아이디 삭제 -->
+      <input type="text" name="id">
+      <input type="submit" name="t" value="test">
+    </form>
+  </body>
+</html>
